@@ -1,0 +1,38 @@
+/* collapsible */
+    .collapsible {
+      background-color: #E39799;
+      color: rgb(0, 0, 0);
+      font-family: 'Pathway Extreme', sans-serif;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      border-radius: 20px;
+    }
+    .active, .collapsible:hover {
+      background-color: #C97779;
+    }
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #FCC3C4;
+      border-radius: 20px;
+    }
+/* collapsible */
+
+/* font */
+    h1 {
+      font-weight: 700; /* Bold */
+    }
+    
+    p {
+      font-weight: 400; /* Regular */
+    }
+    button {
+      font-weight: 400;
+    }
+/* font */
