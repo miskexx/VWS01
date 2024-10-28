@@ -1,32 +1,77 @@
-/* collapsible */
-    .collapsible {
-      background-color: #E39799;
-      color: rgb(0, 0, 0);
-      font-family: 'Pathway Extreme', sans-serif;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      border-radius: 20px;
-    }
-    .active, .collapsible:hover {
-      background-color: #C97779;
-    }
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #FCC3C4;
-      border-radius: 20px;
-    }
-/* collapsible */
+
+header{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #E8E8E8;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+header li, a {
+  font-family:'Pathway Extreme', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #C4665E;
+  text-decoration: none;
+}
+.logo {
+  cursor: pointer;
+}
+.nav_links{
+  list-style: none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  color:#AB4C45
+}
+
+ /* collapsible */
+ .collapsible {
+  background-color: #E39799;
+  color: rgb(34, 33, 33);
+  font-family: 'Pathway Extreme', sans-serif;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 20px;
+}
+.active, .collapsible:hover {
+  background-color: #C97779;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #FCC3C4;
+  border-radius: 20px;
+}
+/* collapsible */ 
+
+
+
+
+
 
 /* font */
     h1 {
       font-weight: 700; /* Bold */
+    }
+    h2{
+      color: #E4C2A7;
+      text-align: center;;
     }
     
     p {
