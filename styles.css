@@ -1,20 +1,53 @@
 
+body{
+  background-color: #DFBCB6;
+  font-family: 'Pathway Extreme', sans-serif;
+}
+/* font */ 
+  h1 {
+      font-weight: 700; /* Bold */
+      color: #43404A;
+      text-align: center;
+    }
+    h2{
+      font-weight: 700;
+      color: #43404A;
+      padding: 50px;
+    }
+    h4{
+      font-weight: 700;
+       color: #43404A; 
+    }
+      
+      
+    
+    p {
+      font-weight: 400; /* Regular */
+      color: #43404A;
+    }
+    button {
+      font-weight: 400;
+    }
+/* font */
+
+/* header */
 header{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #E8E8E8;
+  background-color: #C19A94;
   display:flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+  border-radius: 150px;
 }
 
 header li, a {
   font-family:'Pathway Extreme', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
-  color: #C4665E;
+  color: #43404A;
   text-decoration: none;
 }
 .logo {
@@ -31,12 +64,13 @@ header li, a {
   transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover {
-  color:#AB4C45
+  color:#37333D
 }
+/* header */
 
  /* collapsible */
  .collapsible {
-  background-color: #E39799;
+  background-color: #C19A94;
   color: rgb(34, 33, 33);
   font-family: 'Pathway Extreme', sans-serif;
   cursor: pointer;
@@ -49,35 +83,13 @@ header li, a {
   border-radius: 20px;
 }
 .active, .collapsible:hover {
-  background-color: #C97779;
+  background-color: #A47972;
 }
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #FCC3C4;
+  background-color: #F3D3CD;
   border-radius: 20px;
 }
 /* collapsible */ 
-
-
-
-
-
-
-/* font */
-    h1 {
-      font-weight: 700; /* Bold */
-    }
-    h2{
-      color: #E4C2A7;
-      text-align: center;;
-    }
-    
-    p {
-      font-weight: 400; /* Regular */
-    }
-    button {
-      font-weight: 400;
-    }
-/* font */
