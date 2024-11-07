@@ -1,53 +1,115 @@
 
+/* barvy */
+:root{
+  --bila: #F8F0FB;
+  --cerna: #211A1D;
+
+  --skoroc:#201723;
+  --darkpurple: #231927;
+  --tmfialova:#421D86;
+  --fialova: #531FBA;
+  --svfialova: #8075FF;
+  --svetfialova:#9E94FE;
+  --nejsvfialova: #BCB3FD;
+
+}
+/* barvy */
+
 body{
-  background-color: #DFBCB6;
+  background-color: var(--cerna);
   font-family: 'Pathway Extreme', sans-serif;
 }
 /* font */ 
   h1 {
       font-weight: 700; /* Bold */
-      color: #43404A;
+      color: var(--svfialova);
       text-align: center;
     }
     h2{
       font-weight: 700;
-      color: #43404A;
-      padding: 50px;
+      color: var(--svfialova);
+      padding: 5px;
+    }
+    h3{
+      font-weight: 700;
+      color: var(--svfialova);
     }
     h4{
       font-weight: 700;
-       color: #43404A; 
+       color: var(--svfialova); 
     }
-      
-      
-    
     p {
       font-weight: 400; /* Regular */
-      color: #43404A;
+      color: var(--bila);
     }
+    i {
+      color: var(--nejsvfialova);
+    }
+    b{
+      color: var(--nejsvfialova);
+    }
+    li {
+      color: var(--bila);
+    }
+
+    a {
+      font-weight: 400;
+
+    }
+
     button {
       font-weight: 400;
     }
-/* font */
+
+
+ /* tables */   
+ table, th, td {
+  border-collapse: collapse;
+}
+
+table {
+  border-color: var(--cerna);
+  width: 100%;
+  color: var(--bila);
+  border-radius: 10px;
+}
+
+td {
+  padding: 15px;
+  background-color: var(--nejsvfialova);
+  color: var(--tmfialova);
+  text-align: left;
+  border-style: solid;
+}
+th {
+  padding: 15px;
+  background-color: var(--tmfialova);
+  color: var(--nejsvfialova);
+  text-align: center;
+}
+
+/* tables */
+
+
 
 /* header */
 header{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #C19A94;
+  background-color: var(--darkpurple);
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-  border-radius: 150px;
+  padding: 10px 10%;
+  border-radius: 10px;
 }
 
 header li, a {
   font-family:'Pathway Extreme', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  color: #43404A;
+  font-size: 18px;
+  color: var(--bila);
   text-decoration: none;
 }
 .logo {
@@ -64,32 +126,37 @@ header li, a {
   transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover {
-  color:#37333D
+  color: var(--cervenahover);
 }
 /* header */
 
  /* collapsible */
  .collapsible {
-  background-color: #C19A94;
-  color: rgb(34, 33, 33);
+  background-color: var(--tmfialova);
+  color: var(--bila);
   font-family: 'Pathway Extreme', sans-serif;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  border-radius: 20px;
 }
 .active, .collapsible:hover {
-  background-color: #A47972;
+  background-color: var(--fialova);
 }
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #F3D3CD;
-  border-radius: 20px;
+  background-color: var(--svfialova);
 }
 /* collapsible */ 
+
+main section {
+  display:block;
+  padding: .25em;
+  background-color: var(--skoroc);
+  margin-bottom: 5em;
+}
