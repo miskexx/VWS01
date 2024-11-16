@@ -1,0 +1,35 @@
+header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--header-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-radius: 10px;
+  }
+  
+  header li a {
+    font-family:'Pathway Extreme', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--bila);
+    text-decoration: none;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .nav_links{
+    list-style: none;
+  }
+  .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  .nav_links li a{
+    transition: all 0.3s ease 0s;
+  }
+  .nav_links li a:hover {
+    color: var(--secondary-color);
+  }

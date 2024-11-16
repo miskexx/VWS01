@@ -1,0 +1,70 @@
+
+/* barvy */
+:root{
+  --bila: #F8F0FB;
+  --cerna: #211A1D;
+  --skoroc:#201723;
+
+  --header-color: #231927;  
+  --primary-color:#421D86;
+  --secondary-color: #BCB3FD;
+
+  --nadpis-color: #8075FF;
+  --tertiary-color:#9E94FE;
+
+}
+/* barvy */
+
+body{
+  background-color: var(--cerna);
+  font-family: 'Pathway Extreme', sans-serif;
+}
+
+main {
+width: 60%;
+margin: auto;
+}
+
+/* font */ 
+  h1 {
+      font-weight: 700; /* Bold */
+      color: var(--nadpis-color);
+      text-align: left;
+    }
+    h2{
+      font-weight: 700;
+      color: var(--nadpis-color);
+      padding: 5px;
+    }
+    h3{
+      font-weight: 700;
+      color: var(--nadpis-color);
+    }
+    h4{
+      font-weight: 700;
+       color: var(--nadpis-color); 
+    }
+    p {
+      font-weight: 400; /* Regular */
+      color: var(--bila);
+    }
+    i {
+      color: var(--secondary-color);
+    }
+    b{
+      color: var(--secondary-color);
+    }
+    li {
+      color: var(--bila);
+    }
+
+    a {
+      font-weight: 400;
+
+    }
+
+    button {
+      font-weight: 400;
+    }
+
+

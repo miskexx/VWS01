@@ -1,0 +1,25 @@
+.collapsible {
+    background-color: var(--primary-color);
+    color: var(--bila);
+    font-family: 'Pathway Extreme', sans-serif;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .active, .collapsible:hover {
+    background-color: var(--nadpis-color);
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    color: black;
+  }
+  .collapsible b {
+    color: brown;
+  }

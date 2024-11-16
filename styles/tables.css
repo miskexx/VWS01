@@ -1,0 +1,25 @@
+table, th, td {
+    border-collapse: collapse;
+  }
+  
+  table {
+    border-color: var(--cerna);
+    width: 100%;
+    color: var(--bila);
+    border-radius: 10px;
+  }
+  
+  td {
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: left;
+    border-style: solid;
+  }
+  th {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  
