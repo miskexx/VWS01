@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> HOME | CS2 CRAFTS </title>
     <link rel="icon" href="./images/logozatim.png" type="png">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap" rel="stylesheet">
@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/tables.css">
     <link rel="stylesheet" href="styles/collapsible.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="stylesheet" href="styles/gallery.css">
+    <script type="text/javascript" src="gallery-script.js"></script>
 </head>
 
 <body>
@@ -20,153 +24,302 @@
             <ul class="nav_links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="elements.html">ELEMENTS</a></li>
-                <li><a href="gallery.html"> GALLERY</a></li>
+                <li><a href="gallery.html" class="active"> GALLERY</a></li>
                 <li><a href="diy.html"> DIY </a></li>
             </ul>
         </nav>
     </header>
 
+
 <main>
-<h1>GALLERY</h1>
-    <ul>
-        <li><b>All</b></li>
-        <li><b>Funny crafts</b></li>
-        <li><b>Pretty crafts</b></li>
-        <li><b>Expensive skins recreation</b></li>
-        <p>The most interesting challenge for custom craft lovers 
-            has become recreating expensive items on a much smaller budget. Especially for you, we have gathered
-            several truly worthwhile works that deserve to exist.</p>
-        <li><b>Vikon's gallery</b></li>
-        <p>Vikon is our beloved skin artist we love. 
-            He was so kind to share his own skin ideas with our website.</p>
-        <li><b>Šmakuláda's gallery</b></li>
-        <p>Šmakuláda is really master of his own crafs and we are proud to share his ideas with you.</p>
-        <li><b>Dano's gallery</b></li>
-        <p>Last but not least is a very special artist and his crafts can only be describe as the best you'll ever seen. Take a look!</p>
-    </ul>
-    <h2>GALLERY</h2>
+<h1 class="slide-in-elliptic-left-fwd">GALLERY</h1>
 
-    <!-- funny -->
-    <img src="./gallery/nerd.png" height="200" alt="Nerd">
-    <p> MP 7 | Whiteout <br>
-        Sticker | Ence Holo Copenhagen 2024 <br>
-        Sticker | Lefty (CT) | 100% Scrape <br>
-        Sticker | Lenticular cheeky eyes | 90% Scrape <br>
-        Sticker | Paper mouth | 100% Scrape<br>
-        Sticker | Red Shades (Foil) | 100% Scrape</p>
-   
-    <img src="./gallery/fingerup.png" height="200" alt="Sakkaku">
-    <p>MAC-10 | Sakkaku <br>
-        Sticker | Ouchie (Foil) 5x</p>
+<div class="container">
 
-    <img src="./gallery/chameleon.png" height="200" alt="Chameleon">
-    <p> AUG | Chameleon <br>
-        Sticker | Tamara</p>
-    
-    <img src="./gallery/kawai.png" height="200" alt="Kawai">
-    <p> P90 | Storm <br>
-        Sticker | 3DMAX | Katovice 2014 <br>
-        Sticker | Kawai T (Holo)</p>
+    <main class="mainContainer">
 
-    <!-- pretty -->
-    <img src="./gallery/temukau.png" height="200" alt="Temukau">
-    <p> M4A4 | Temukau<br>
-        Sticker | Loving Eyes (Holo)</p>
-    
-    <img src="./gallery/pandora.png" height="200" alt="Pandora">
-    <p> MP9 | Pandora's Box<br>
-        Sticker | Googly Eye (Lenticular) 5x</p>
+        <section class="btns">
+            <ul>
+                <li class="btn active" data-filter="All">All</li>
+                <li class="btn" data-filter="Funny">Funny crafts</li>
+                <li class="btn" data-filter="Pretty">Pretty crafts</li>
+                <li class="btn" data-filter="Expensive">Expensive skins recreation</li>
+                <li class="btn" data-filter="Vikon">Vikon's gallery</li>
+                <li class="btn" data-filter="Samo">Šmakuláda's gallery</li>
+                <li class="btn" data-filter="Danka">Dano's gallery</li>
+            </ul>
+        </section>
 
-    <img src="./gallery/sandstorm.png" height="200" alt="Sandstorm">
-    <p> Tec-9 | Sandstorm<br>
-        Sticker | Fluxo (holo) | BLAST.tv Paris 2023 5x</p>
-    
-    <img src="./gallery/fireintthehole.png" height="200" alt="FireInTheHole">
-    <p> Desert Eagle | Night<br>
-        Sticker | Fire in the Hole (holo) 5x</p>
-   
-    <!-- expensive -->
-    <img src="./gallery/blaze.png" height="200" alt="Blaze">
-    <p> Desert Eagle | Conspiracy<br> 
-        Sticker | Incineration 5x</p>
+        <section class="definition">
+            <h2>Definitions</h2>
+            <p class="def" data-items="Expensive">
+                The most interesting challenge for custom craft lovers 
+                has become recreating expensive items on a much smaller budget. Especially for you, we have gathered
+                several truly worthwhile works that deserve to exist.
+            </p>
+            <p class="def" data-items="Vikon">
+                Vikon is our beloved skin artist we love. 
+                He was so kind to share his own skin ideas with our website.
+            </p>
+            <p class="def" data-items="Samo">
+                Šmakuláda is really master of his own crafs and we are proud to share his ideas with you.
+            </p>
+            <p class="def" data-items="Danka">
+                Last but not least is a very special artist and his crafts can only be describe as the best you'll ever seen. Take a look!
+            </p>
 
-    <img src="./gallery/howl.png" height="200" alt="Fade">
-    <p> M4A4 | Red DDPAT Souvenir <br>
-        Sticker | Baby Howl — x5</p>
+        </section>
 
-    <img src="./gallery/fade.png" height="200" alt="Fade">
-    <p> Glock-18 | Moonrise <br>
-        Sticker | CeRq | Rio 2022<br>
-        Sticker | sdy | Rio 2022<br>
-        Sticker | nicoodoz | Rio 2022<br>
-        Sticker | FL1T | Rio 2022<br>
-        Sticker | FL1T (Glitter) | Rio 2022</p>
+        <section class="gallery">
 
-<!-- viktorovo craft -->
-    <img src="./gallery/heirloom.png" height="200" alt="Heirloom">
-    <p> Desert Eagle | Heirloom<br>
-        Sticker | ECSTATIC (Gold) | Copenhagen 2024 2x<br>
-        Sticker | ECSTATIC (Glitter) | Copenhagen 2024 2x<br>
-        Sticker | ECSTATIC | Copenhagen 2024</p>
+            <div class="card" data-items="Funny">
+                <div class="imgBox">
+                    <img src="./gallery/nerd.png">
+                </div>
+                <div class="imgText">
+                    <h2>MP 7 | Whiteout</h2>
+                    <p>Sticker | Ence Holo Copenhagen 2024 <br>
+                        Sticker | Lefty (CT) | 100% Scrape <br>
+                        Sticker | Lenticular cheeky eyes | 90% Scrape <br>
+                        Sticker | Paper mouth | 100% Scrape<br>
+                        Sticker | Red Shades (Foil) | 100% Scrape</p>
+                </div>
+            </div>
 
-    <img src="./gallery/blacklotus.png" height="200" alt="BlackLotus">
-    <p> M4A1-S | Black Lotus<br>
-        Sticker | Web Stuck 4x<br>
-        Sticker | Web Stuck (holo)</p>
+            <div class="card" data-items="Funny">
+                <div class="imgBox">
+                    <img src="./gallery/fingerup.png">
+                </div>
+                <div class="imgText">
+                    <h2>MAC-10 | Sakkaku</h2>
+                    <p>MAC-10 | Sakkaku <br>
+                    Sticker | Ouchie (Foil) 5x</p>
+                </div>
+            </div>
 
-    <img src="./gallery/rose.png" height="200" alt="Rose">
-    <p> AWP | Pit Viper <br>
-        Sticker | zorte | Paris 2023 5x</p>
+            <div class="card" data-items="Funny">
+                <div class="imgBox">
+                    <img src="./gallery/chameleon.png">
+                </div>
+                <div class="imgText">
+                    <h2> AUG | Chameleon</h2>
+                    <p>Sticker | Tamara</p>
+                </div>
+            </div>
 
-    <img src="./gallery/purple.png" height="200" alt="Purple">
-    <p>Souvenir USP-S | Purple DDPAT <br>
-        Sticker | 9z Team | Antwerp 2022 4x</p>
+            <div class="card" data-items="Funny">
+                <div class="imgBox">
+                    <img src="./gallery/kawai.png">
+                </div>
+                <div class="imgText">
+                    <h2>P90 | Storm</h2>
+                    <p>Sticker | 3DMAX | Katovice 2014 <br>
+                        Sticker | Kawai T (Holo)</p>
+                </div>
+            </div>
 
-    <img src="./gallery/neonoir.png" height="200" alt="Neonoir">
-    <p> M4A4 | Neo-Noir <br>
-        Sticker | CeRq | Rio 2022<br>
-        Sticker | sdy | Rio 2022<br>
-        Sticker | nicoodoz | Rio 2022<br>
-        Sticker | FL1T | Rio 2022<br>
-        Sticker | FL1T (Glitter) | Rio 2022</p>
+            <div class="card" data-items="Pretty">
+                <div class="imgBox">
+                    <img src="./gallery/temukau.png">
+                </div>
+                <div class="imgText">
+                    <h2>M4A4 | Temukau</h2>
+                    <p>Sticker | Loving Eyes (Holo)</p>
+                </div>
+            </div>
 
-    <img src="./gallery/heat.png" height="200" alt="Heat">
-    <p> MAG-7 | Heat<br>
-        Sticker | Renegades | 2020 RMR 2x<br>
-        Sticker | sjuush | Stockholm 2021<br>
-        Sticker | Heroic (Holo) | 2020 RMR</p>
+            <div class="card" data-items="Pretty">
+                <div class="imgBox">
+                    <img src="./gallery/pandora.png">
+                </div>
+                <div class="imgText">
+                    <h2>MP9 | Pandora's Box</h2>
+                    <p>Sticker | Googly Eye (Lenticular) 5x</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Pretty">
+                <div class="imgBox">
+                    <img src="./gallery/sandstorm.png">
+                </div>
+                <div class="imgText">
+                    <h2>Tec-9 | Sandstorm</h2>
+                    <p>Sticker | Fluxo (holo) | BLAST.tv Paris 2023 5x</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Pretty">
+                <div class="imgBox">
+                    <img src="./gallery/fireintthehole.png">
+                </div>
+                <div class="imgText">
+                    <h2>Desert Eagle | Night</h2>
+                    <p>Sticker | Fire in the Hole (holo) 5x</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Expensive">
+                <div class="imgBox">
+                    <img src="./gallery/blaze.png">
+                </div>
+                <div class="imgText">
+                    <h2>Desert Eagle | Conspiracy</h2>
+                    <p>Sticker | Incineration 5x</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Expensive">
+                <div class="imgBox">
+                    <img src="./gallery/howl.png">
+                </div>
+                <div class="imgText">
+                    <h2>M4A4 | Red DDPAT Souvenir</h2>
+                    <p>Sticker | Baby Howl — x5</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Expensive">
+                <div class="imgBox">
+                    <img src="./gallery/fade.png">
+                </div>
+                <div class="imgText">
+                    <h2>Glock-18 | Moonrise</h2>
+                    <p>Sticker | CeRq | Rio 2022<br>
+                        Sticker | sdy | Rio 2022<br>
+                        Sticker | nicoodoz | Rio 2022<br>
+                        Sticker | FL1T | Rio 2022<br>
+                        Sticker | FL1T (Glitter) | Rio 2022</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Vikon">
+                <div class="imgBox">
+                    <img src="./gallery/heat.png">
+                </div>
+                <div class="imgText">
+                    <h2>MAG-7 | Heat</h2>
+                    <p>Sticker | Renegades | 2020 RMR 2x<br>
+                        Sticker | sjuush | Stockholm 2021<br>
+                        Sticker | Heroic (Holo) | 2020 RMR</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Vikon">
+                <div class="imgBox">
+                    <img src="./gallery/neonoir.png">
+                </div>
+                <div class="imgText">
+                    <h2>M4A4 | Neo-Noir</h2>
+                    <p>Sticker | CeRq | Rio 2022<br>
+                        Sticker | sdy | Rio 2022<br>
+                        Sticker | nicoodoz | Rio 2022<br>
+                        Sticker | FL1T | Rio 2022<br>
+                        Sticker | FL1T (Glitter) | Rio 2022</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Vikon">
+                <div class="imgBox">
+                    <img src="./gallery/purple.png">
+                </div>
+                <div class="imgText">
+                    <h2>Souvenir USP-S | Purple DDPAT</h2>
+                    <p>Sticker | 9z Team | Antwerp 2022 4x</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Vikon">
+                <div class="imgBox">
+                    <img src="./gallery/rose.png">
+                </div>
+                <div class="imgText">
+                    <h2>AWP | Pit Viper</h2>
+                    <p>Sticker | zorte | Paris 2023 5x</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Vikon">
+                <div class="imgBox">
+                    <img src="./gallery/heirloom.png">
+                </div>
+                <div class="imgText">
+                    <h2>Desert Eagle | Heirloom</h2>
+                    <p>Sticker | ECSTATIC (Gold) | Copenhagen 2024 2x<br>
+                        Sticker | ECSTATIC (Glitter) | Copenhagen 2024 2x<br>
+                        Sticker | ECSTATIC | Copenhagen 2024</p>
+                </div>
+            </div>
+            
+            <div class="card" data-items="Vikon">
+                <div class="imgBox">
+                    <img src="./gallery/blacklotus.png">
+                </div>
+                <div class="imgText">
+                    <h2>M4A1-S | Black Lotus</h2>
+                    <p>Sticker | Web Stuck 4x<br>
+                        Sticker | Web Stuck (holo)</p>
+                </div>
+            </div>
+
+            <div class="card" data-items="Samo">
+                <div class="imgBox">
+                    <img src="./gallery/banana1.png">
+                </div>
+                <div class="imgText">
+                    <h2>Five-SeveN | Monkey Business</h2>
+                    <p>Sticker | BLAST.tv | Paris 2023 2x <br>
+                        Sticker | w0nderful | Copenhagen 2024 <br>
+                        Sticker | iM | Copenhagen 2024 <br>
+                        Sticker | Natus Vincere | Copenhagen 2024</p>
+                </div>
+            </div>
 
 
-<!-- samovo craft -->
-    <img src="./gallery/banana1.png" height="200" alt="Banana">
-    <p> Five-SeveN | Monkey Business <br>
-        Sticker | BLAST.tv | Paris 2023 2x <br>
-        Sticker | w0nderful | Copenhagen 2024 <br>
-        Sticker | iM | Copenhagen 2024 <br>
-        Sticker | Natus Vincere | Copenhagen 2024</p>
-    
-    <img src="./gallery/fap.png" height="200" alt="FAP">
-    <p> P250 | Asiimov<br>
-        Sticker: FaZe Clan | Paris 2023<br>
-        Apeks | Copenhagen 2024<br>
-        paiN Gaming | Copenhagen 2024</p>
-    
-    <img src="./gallery/koi.png" height="200" alt="GoldenKoi">
-    <p> Desert Eagle | Golden Koi<br>
-        Sticker | Gold Web (Foil)<br>
-        Sticker | Infinite Diamond (Holo)</p>
+            <div class="card" data-items="Samo">
+                <div class="imgBox">
+                    <img src="./gallery/fap.png">
+                </div>
+                <div class="imgText">
+                    <h2>P250 | Asiimov</h2>
+                    <p>Sticker: FaZe Clan | Paris 2023<br>
+                        Apeks | Copenhagen 2024<br>
+                        paiN Gaming | Copenhagen 2024</p>
+                </div>
+            </div>
 
-<!-- Danky craft -->
+            <div class="card" data-items="Samo">
+                <div class="imgBox">
+                    <img src="./gallery/koi.png">
+                </div>
+                <div class="imgText">
+                    <h2>Desert Eagle | Golden Koi</h2>
+                    <p>Sticker | Gold Web (Foil)<br>
+                        Sticker | Infinite Diamond (Holo)</p>
+                </div>
+            </div>
 
-<img src="./gallery/slate.png" height="200" alt="Slate">
-    <p> AK-47 | Slate<br>
-        Sticker | Speedy T 3x<br>
-        Sticker | Ninjas in Pyjamas (Holo) | Paris 2023</p>
+            <div class="card" data-items="Danka">
+                <div class="imgBox">
+                    <img src="./gallery/sandduke.png">
+                </div>
+                <div class="imgText">
+                    <h2>P250 | Sand Dune</h2>
+                    <p>Sticker | Bum A Smoke 5x</p>
+                </div>
+            </div>
 
-<img src="./gallery/sandduke.png" height="200" alt="SandDuke">
-    <p> P250 | Sand Dune<br>
-        Sticker | Bum A Smoke 5x</p>
-
-</main>
+            <div class="card" data-items="Danka">
+                <div class="imgBox">
+                    <img src="./gallery/slate.png">
+                </div>
+                <div class="imgText">
+                    <h2>AK-47 | Slate</h2>
+                    <p>Sticker | Speedy T 3x<br>
+                        Sticker | Ninjas in Pyjamas (Holo) | Paris 2023</p>
+                </div>
+            <script type="text/javascript" src="gallery-script.js"></script>
+        </section>      
+    </main>
+</div>
 </body>
 </html>

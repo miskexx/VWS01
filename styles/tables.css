@@ -1,14 +1,13 @@
 table, th, td {
     border-collapse: collapse;
   }
-  
   table {
     border-color: var(--cerna);
     width: 100%;
     color: var(--bila);
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
   td {
     padding: 15px;
     background-color: var(--secondary-color);
@@ -23,3 +22,30 @@ table, th, td {
     text-align: center;
   }
   
+  .odkazy{
+      background: var(--primary-color);
+      color:black;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+  .odkazy li {
+      background: var(--secondary-color);
+      color: var(--secondary-color);
+      padding: 5px;
+      margin-left: 35px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  main li a{
+    color: var(--primary-color);
+    text-decoration: none;
+    }
+    
+  main li a:hover{
+    color: var(--tertiary-color);
+    }
+    
+  main li a:active{
+    color: var(--tertiary-color);
+    }
+        /* list na diy strane */

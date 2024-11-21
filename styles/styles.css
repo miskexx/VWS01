@@ -7,13 +7,17 @@
 
   --header-color: #231927;  
   --primary-color:#421D86;
+  --collapse-color:#5a2caf;
   --secondary-color: #BCB3FD;
 
   --nadpis-color: #8075FF;
-  --tertiary-color:#9E94FE;
+  --tertiary-color:#6f66c1;
 
 }
 /* barvy */
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wdth,wght@0,8..144,75..100,100..900;1,8..144,75..100,100..900&display=swap');
 
 body{
   background-color: var(--cerna);
@@ -45,7 +49,7 @@ margin: auto;
        color: var(--nadpis-color); 
     }
     p {
-      font-weight: 400; /* Regular */
+      font-weight: 100; /* Regular */
       color: var(--bila);
     }
     i {
@@ -66,5 +70,26 @@ margin: auto;
     button {
       font-weight: 400;
     }
+    /* Regular */
+    
+    /* animace nadpisu */
+    .slide-in-elliptic-left-fwd {
+      animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+ @keyframes slide-in-elliptic-left-fwd {
+  0% {
+    transform: translateX(-800px) rotateY(30deg) scale(0);
+    transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+
+
 
 

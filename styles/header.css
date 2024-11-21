@@ -8,6 +8,10 @@ header{
     align-items: center;
     padding: 10px 10%;
     border-radius: 10px;
+    z-index: 10; /* Aby byl nad ostatními prvky */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
   }
   
   header li a {
@@ -30,6 +34,14 @@ header{
   .nav_links li a{
     transition: all 0.3s ease 0s;
   }
-  .nav_links li a:hover {
+  .nav_links li a:hover,
+  .nav_links li a.active {
     color: var(--secondary-color);
+    background-color: var(--header-color);
   }
+
+ /* sticky header */
+ .sticky{
+    position: sticky;
+    top: 0;
+ }

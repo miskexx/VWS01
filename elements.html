@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/tables.css">
     <link rel="stylesheet" href="styles/collapsible.css">
+    <link rel="stylesheet" href="styles/element-sekce.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="html" href="footer.html">
 </head>
 
@@ -20,7 +22,7 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="elements.html">ELEMENTS</a></li>
+                <li><a href="elements.html" class="active">ELEMENTS</a></li>
                 <li><a href="gallery.html"> GALLERY</a></li>
                 <li><a href="diy.html"> DIY </a></li>
             </ul>
@@ -28,20 +30,56 @@
     </header>
 
 <main> 
-  <h1>ELEMENTS</h1>
-  <h4>What do we use for crafting:</h4>
-    <ul>
-        <li>Gun skins</li>
-        <li>Stickers</li>
-        <li>Charms</li>
+  <h1 class="slide-in-elliptic-left-fwd">
+    ELEMENTS
+  </h1>
+  <h4>
+    What do we use for crafting:
+  </h4>
+
+    <div class="scroll-buttons">
+      <a href="#gun-skin" class="btn-scroll">Skins</a>
+      <a href="#stickers" class="btn-scroll">Stickers</a>
+      <a href="#charms" class="btn-scroll">Charms</a>
+    </div>
+
+  <p>
+  Skins, stickers, and charms are integral elements of gaming that offer players a fun and creative way 
+  to express their individuality and personalize their gameplay experience. 
+  </p>
+  <p>
+  Skins are perhaps the most recognizable, providing a visual overhaul for weapons or equipment. 
+  From intricate designs and bold colors to themes that reflect a specific mood, event, or fandom, skins can turn standard gear into a masterpiece. 
+  </p>
+  <p>
+  Stickers, on the other hand, allow players to decorate their items 
+  further with smaller, often symbolic or humorous designs. Whether it’s a tribute to a favorite team, a clever slogan, or a flashy emblem, 
+  stickers add a unique touch and showcase a player’s personal taste or achievements.
+  </p>
+  <p>
+  Charms bring a dynamic and interactive element to customization. These small trinkets hang from weapons, 
+  often moving as you play, adding a sense of character and attention to detail. Together, skins, stickers, 
+  and charms not only enhance the visual appeal of your loadout but also create a deeper connection between 
+  you and the tools you use in the game, making every moment in the game feel more personal and rewarding.
+  </p>
+  
+ 
+  
+    
     </ul>
-    <!-- todle by chtelo aby je to hodilo dolu -->
-  <section>
-    <h2>GUN SKINS</h2>
-    <p>Skins, also referred to as finishes, introduced in the Arms Deal update.
-       They are weapons with different textures that can be equipped in-game. 
-       They are entirely cosmetic, holding no gameplay function.</p>
-    <p><b>To acquire a skin, one must either:</b></p>
+
+    <div class="elements-div" id="gun-skins">
+    <h2>
+      GUN SKINS
+    </h2>
+    <p>
+      Skins, also referred to as finishes, introduced in the Arms Deal update.
+      They are weapons with different textures that can be equipped in-game. 
+      They are entirely cosmetic, holding no gameplay function.
+    </p>
+    <p><b>
+      To acquire a skin, one must either:
+    </b></p>
     <ol>
       <li>Earn them through random drops by playing in online community and official servers.</li>
       <li>From opening containers, such as weapon cases or souvenir packages.</li>
@@ -50,10 +88,12 @@
       <li>Trading with other players.</li>
     </ol>  
     <img src="./images/skins.png" height="300" alt="STICKERS">
-  </section>
+  </div>
  
-  <section>
-     <h2>STICKERS</h2>
+  <div class="elements-div" id="stickers">
+     <h2>
+      STICKERS
+    </h2>
     <p><b>Stickers</b> were introduced in Counter-Strike: Global Offensive with the February 5, 
       2014 update and are purely cosmetic addition to customize a player's weapon.</p>
     <p>A sticker from the player's inventory can be applied only once to any gun or gun skin owned, 
@@ -70,9 +110,9 @@
       </ol>
     
       <img src="./images/stickers.png" height="300" alt="STICKERS">
-  </section>
+    </div>
 
-  <section>
+    <div class="elements-div" id="charms">
     <h2>CHARMS</h2>
     <p>On October 2nd, 2024, CS2 introduced a new Armory Update that brought two brand-new charm collections: 
         the Missing Link Charm Collection and the Small Arms Charm Collection. These charms are an exciting addition to the game, 
@@ -82,11 +122,40 @@
         <li>Buying them from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
         <li>Trading with other players</li>
       </ol>
-    
         <img src="./images/Charmss.png" height="300" alt="CHARMS">
-  </section>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
 </main>
-<footer>      </footer>
+
+<footer>
+  <p>Michaela Fenclová ©2024</p>
+</footer>
 
 </body>
 </html>
