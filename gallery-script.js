@@ -65,3 +65,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll('section.btns li.btn');
+    var definitions = document.querySelectorAll('section.definition .def');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', function () {
+            // Remove the 'active' class from all buttons
+            buttons.forEach((btn) => btn.classList.remove('active'));
+
+            // Add the 'active' class to the clicked button
+            button.classList.add('active');
+
+            // Get the filter value from the clicked button
+            var filter = button.getAttribute('data-filter');
+
+            // Toggle the visibility of the definitions
+            definitions.forEach((def) => {
+                if (filter !== 'All' && def.getAttribute('data-items') === filter) {
+                    def.style.display = 'block'; // Show matching definition
+                    def.setAttribute('aria-hidden', 'false'); // Accessible
+                } else {
+                    def.style.display = 'none'; // Hide non-matching definitions
+                    def.setAttribute('aria-hidden', 'true'); // Accessible
+                }
+            });
+        });
+    });
+});
+

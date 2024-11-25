@@ -1,8 +1,8 @@
 main {
-    width: 60%;
+    width: 80%;
     min-height: 100vh;
     box-sizing: border-box;
-    
+    flex: 1;
 }
 
 .container {
@@ -114,7 +114,7 @@ section.gallery .card.active {
     transition: transform 0.4s ease-in-out; /* Smooth transition for scaling */
 }
 .card:hover .imgBox img { 
-    opacity: 0.3;
+    opacity: 0.2;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
 }
@@ -170,5 +170,9 @@ section.gallery .card.active {
 
 section.definition {
     margin-bottom: 30px; /* Adjust this value as needed */
+}
+
+section.definition .def {
+    display: none; /* Hide all definitions by default */
 }
 

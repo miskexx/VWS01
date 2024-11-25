@@ -23,26 +23,25 @@ table, th, td {
   }
   
   .odkazy{
-      background: var(--primary-color);
-      color:black;
-      padding: 20px;
+      background: var(--skoroc);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
     }
     
   .odkazy li {
-      background: var(--secondary-color);
-      color: var(--secondary-color);
+      background: var(--header-color);
+      color: var(--bila);
       padding: 5px;
       margin-left: 35px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
   main li a{
-    color: var(--primary-color);
+    color: var(--bila);
     text-decoration: none;
     }
     
   main li a:hover{
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     }
     
   main li a:active{

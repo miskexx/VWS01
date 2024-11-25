@@ -21,11 +21,23 @@ html {
 .elements-div a:hover {
     color: var(--tertiary-color);
 }
+.element-content{
+    width: 90%;
+    margin: auto;
+}
+      
 
 .elements-div img {
     max-width: 100%;
     height: auto;
 }
+.element-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 /* scrollovani */
 .scroll-buttons {

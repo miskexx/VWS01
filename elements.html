@@ -72,82 +72,83 @@
     <h2>
       GUN SKINS
     </h2>
-    <p>
-      Skins, also referred to as finishes, introduced in the Arms Deal update.
-      They are weapons with different textures that can be equipped in-game. 
-      They are entirely cosmetic, holding no gameplay function.
-    </p>
-    <p><b>
-      To acquire a skin, one must either:
-    </b></p>
-    <ol>
-      <li>Earn them through random drops by playing in online community and official servers.</li>
-      <li>From opening containers, such as weapon cases or souvenir packages.</li>
-      <li>Trade 10 skins of the same rarity for one of a higher rarity with a Trade Up Contract.</li>
-      <li>Buying skins from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
-      <li>Trading with other players.</li>
-    </ol>  
-    <img src="./images/skins.png" height="300" alt="STICKERS">
+    <div class="element-content">
+        <p>
+          Skins, also referred to as finishes, introduced in the Arms Deal update.
+          They are weapons with different textures that can be equipped in-game. 
+          They are entirely cosmetic, holding no gameplay function.
+        </p>
+        <p><b>
+          To acquire a skin, one must either:
+        </b></p>
+        <ol>
+          <li>Earn them through random drops by playing in online community and official servers.</li>
+          <li>From opening containers, such as weapon cases or souvenir packages.</li>
+          <li>Trade 10 skins of the same rarity for one of a higher rarity with a Trade Up Contract.</li>
+          <li>Buying skins from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
+          <li>Trading with other players.</li>
+        </ol> 
+  </div> 
+    <img class="element-image" src="./images/skins.png" alt="STICKERS">
   </div>
  
   <div class="elements-div" id="stickers">
      <h2>
       STICKERS
     </h2>
-    <p><b>Stickers</b> were introduced in Counter-Strike: Global Offensive with the February 5, 
-      2014 update and are purely cosmetic addition to customize a player's weapon.</p>
-    <p>A sticker from the player's inventory can be applied only once to any gun or gun skin owned, 
-        after which it will be removed from the player's inventory and only exist on the weapon it was placed onto.
-        Trading the weapon skin will carry the applied stickers with them, though stickers applied to vanilla skins (stock weapon skins) 
-        cannot be traded since vanilla weapon skins cannot be traded.
-        A maximum of 5 stickers can be applied to a weapon.</p>
-    <p><b>Stickers can be acquired by:</b></p>
-      <ol>
-        <li>Opening a Sticker Capsule</li>
-        <li>Buying them from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
-        <li>Trading with other players</li>
-        <li>Finding them pre-applied on skins on the Steam Market</li>
-      </ol>
+    <div class="element-content">
+          <p><b>Stickers</b> were introduced in Counter-Strike: Global Offensive with the February 5, 
+          2014 update and are purely cosmetic addition to customize a player's weapon.</p>
+        <p>A sticker from the player's inventory can be applied only once to any gun or gun skin owned, 
+            after which it will be removed from the player's inventory and only exist on the weapon it was placed onto.
+            Trading the weapon skin will carry the applied stickers with them, though stickers applied to vanilla skins (stock weapon skins) 
+            cannot be traded since vanilla weapon skins cannot be traded.
+            A maximum of 5 stickers can be applied to a weapon.</p>
+        <p><b>Stickers can be acquired by:</b></p>
+          <ol>
+            <li>Opening a Sticker Capsule</li>
+            <li>Buying them from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
+            <li>Trading with other players</li>
+            <li>Finding them pre-applied on skins on the Steam Market</li>
+          </ol>
+    </div>
     
-      <img src="./images/stickers.png" height="300" alt="STICKERS">
+    
+      <img class="element-image" src="./images/stickers.png" alt="STICKERS">
     </div>
 
     <div class="elements-div" id="charms">
     <h2>CHARMS</h2>
-    <p>On October 2nd, 2024, CS2 introduced a new Armory Update that brought two brand-new charm collections: 
-        the Missing Link Charm Collection and the Small Arms Charm Collection. These charms are an exciting addition to the game, 
-        providing players with stylish, attachable collectibles that can be displayed on their weapons.</p>
-        <p><b>Charms can be acquired by:</b></p>
-      <ol>
-        <li>Buying them from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
-        <li>Trading with other players</li>
-      </ol>
-        <img src="./images/Charmss.png" height="300" alt="CHARMS">
+    <div class="element-content">
+        <p>On October 2nd, 2024, CS2 introduced a new Armory Update that brought two brand-new charm collections: 
+            the Missing Link Charm Collection and the Small Arms Charm Collection. These charms are an exciting addition to the game, 
+            providing players with stylish, attachable collectibles that can be displayed on their weapons.</p>
+            <p><b>Charms can be acquired by:</b></p>
+          <ol>
+            <li>Buying them from the <a href="https://steamcommunity.com/market/">Steam Market</a>.</li>
+            <li>Trading with other players</li>
+          </ol>
+    </div>
+        <img class="element-image" src="./images/Charmss.png" alt="CHARMS">
     </div>
 
     <script>
       $(document).ready(function(){
-        // Add smooth scrolling to all links
+
         $("a").on('click', function(event) {
       
-          // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
-            // Prevent default anchor click behavior
             event.preventDefault();
-      
-            // Store hash
+  
             var hash = this.hash;
-      
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  
             $('html, body').animate({
               scrollTop: $(hash).offset().top
             }, 800, function(){
          
-              // Add hash (#) to URL when done scrolling (default click behavior)
               window.location.hash = hash;
             });
-          } // End if
+          }
         });
       });
     </script>
